@@ -128,6 +128,16 @@
           }
         }
 
+        /* Balance heading/label lines so a single word never drops alone on its own line;
+           pretty wrapping keeps body/subtitle paragraphs from leaving an orphan last word. */
+        h1, h2, h3, h4, .dm-label {
+          text-wrap: balance;
+        }
+
+        p {
+          text-wrap: pretty;
+        }
+
         .dm-reveal {
           opacity: 1;
           transition: opacity .7s cubic-bezier(.16, 1, .3, 1), transform .7s cubic-bezier(.16, 1, .3, 1)
@@ -649,7 +659,7 @@
 
           <p class="dm-reveal"
             style="margin-top:52px;font-size:clamp(22px,2.5vw,32px);font-weight:600;letter-spacing:-.02em;text-align:center;background:linear-gradient(90deg,rgba(237,237,239,.5),#EDEDEF,rgba(237,237,239,.5));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">
-            Bán hàng không phải là một quá trình chèo kéo<br>mà là quá trình tạo ảnh hưởng và ra quyết định.
+            Bán hàng không phải là một quá trình chèo kéo mà là quá trình tạo ảnh hưởng và ra quyết định.
           </p>
         </div>
       </section>
@@ -1068,7 +1078,7 @@
                   01</div>
                 <div>
                   <h3 style="font-size:24px;font-weight:600;color:#EDEDEF;margin-bottom:12px;letter-spacing:-.02em">
-                    State Management Mastery</h3>
+                    State Management&nbsp;Mastery</h3>
                   <p style="font-size:14px;line-height:1.65;color:#8A8F98">Làm chủ trạng thái đỉnh cao — cuộc chiến giữa
                     Higher Self &amp; Lower Self. Bán hàng và thuyết trình thực chất là sự truyền dẫn trạng thái (State
                     Transfer) từ nội tâm bạn sang người nghe.</p>
@@ -1188,16 +1198,13 @@
               style="font-size:clamp(40px,7vw,96px);font-weight:700;line-height:1.1;letter-spacing:-.04em;margin-bottom:36px">
               <span
                 style="background:linear-gradient(180deg,#fff 0%,rgba(237,237,239,.8) 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">Sớm
-                hay muộn bạn cũng<br>sẽ phải </span><span
+                hay muộn bạn cũng sẽ phải </span><span
                 style="background:linear-gradient(90deg,#5E6AD2,#818cf8,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:shimmer 4s linear infinite;background-size:300% auto">trả
                 giá.</span>
             </h2>
             <div class="dm-reveal" style="max-width:640px;margin:0 auto 40px">
               <p style="font-size:18px;line-height:1.75;color:rgba(237,237,239,.65);margin:0 0 4px">
-                Bạn có thể trả giá bằng 5 đến 7 năm tự mày mò, thử sai và bỏ lỡ nhiều cơ hội.
-              </p>
-              <p style="font-size:18px;line-height:1.75;color:rgba(237,237,239,.65);margin:0 0 4px">
-                Bạn có thể đầu tư để học một <span style="color:#F59E0B">công thức đã được kiểm chứng</span>.
+                Bạn có thể <span style="color:#F59E0B">trả giá bằng 5 đến 7 năm tự mày mò, thử sai và bỏ lỡ nhiều cơ hội</span>. Bạn có thể đầu tư để học một <span style="color:#F59E0B">công thức đã được kiểm chứng</span>.
               </p>
               <p style="font-size:18px;line-height:1.75;color:rgba(237,237,239,.65);margin:0">
                 Tiền bạc có thể tạo lại. <strong style="color:#fff;font-weight:700">Thời gian thì không.</strong>
@@ -1209,12 +1216,12 @@
               <div style="font-size:64px;font-weight:700;color:#5E6AD2;line-height:.8;margin-bottom:20px;opacity:.7">"</div>
               <p
                 style="font-size:clamp(16px,1.8vw,19px);font-style:italic;font-weight:400;letter-spacing:-.01em;color:rgba(237,237,239,.7);margin:0 0 18px;line-height:1.7">
-                Nếu có một điều tôi ước mình được biết sớm hơn trong<br>hơn 15 năm đào tạo Coach chuyên nghiệp tại Việt Nam, thì đó là:
+                Nếu có một điều tôi ước mình được biết sớm hơn trong hơn 15 năm đào tạo Coach chuyên nghiệp tại Việt Nam, thì đó là:
               </p>
               <p
                 style="font-size:clamp(17px,1.9vw,21px);font-style:italic;font-weight:700;letter-spacing:-.01em;color:rgba(237,237,239,.9);margin:0;line-height:1.6">
                 Bán sản phẩm tri thức là một <span
-                  style="background:linear-gradient(90deg,#5E6AD2,#818cf8,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">kỹ năng bắt buộc<br>trong thời đại mới.</span>
+                  style="background:linear-gradient(90deg,#5E6AD2,#818cf8,#a78bfa);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">kỹ năng bắt buộc trong thời đại mới.</span>
               </p>
               <div style="font-size:64px;font-weight:700;color:#5E6AD2;line-height:.8;margin-top:20px;text-align:right;opacity:.7">"</div>
             </div>
