@@ -420,6 +420,47 @@
         .hero-video-container {
           aspect-ratio: 9/16;
         }
+
+        #hero-speaker-img {
+          object-position: 56% center;
+        }
+
+        @media (max-width:760px) {
+          #hero-speaker-img {
+            object-position: center 18%;
+          }
+
+          .hero-play-btn-wrap {
+            align-items: flex-start !important;
+            padding-top: 16px !important;
+          }
+
+          .hero-video-play-btn {
+            width: 52px !important;
+            height: 52px !important;
+          }
+
+          .hero-name-card {
+            padding: 10px 14px !important;
+            bottom: 10px !important;
+            left: 10px !important;
+            right: 10px !important;
+          }
+
+          .hero-name-card .hero-name-title {
+            font-size: 13px !important;
+          }
+
+          .hero-name-card .hero-name-role {
+            font-size: 9px !important;
+            margin-top: 1px !important;
+          }
+
+          .hero-name-card .hero-name-arrow {
+            width: 26px !important;
+            height: 26px !important;
+          }
+        }
       </style>
     </helmet>
 
@@ -554,12 +595,12 @@
               <!-- YouTube thumbnail preview (portrait) — click to open lightbox -->
               <div id="hero-video-trigger" class="hero-video-container"
                 style="width:100%;border:1.5px solid rgba(94,106,210,.35);border-radius:20px;overflow:hidden;position:relative;cursor:pointer;group">
-                <img src="uploads/hero_image.jpg" alt="Video giới thiệu chương trình"
+                <img id="hero-speaker-img" src="uploads/hero_image.jpg" alt="Video giới thiệu chương trình"
                   style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;transition:transform .4s ease">
                 <div
                   style="position:absolute;inset:0;background:linear-gradient(to bottom,rgba(0,0,0,.1),rgba(0,0,0,.45))">
                 </div>
-                <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
+                <div class="hero-play-btn-wrap" style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center">
                   <div class="hero-video-play-btn"
                     style="width:72px;height:72px;background:rgba(94,106,210,.9);border-radius:999px;display:flex;align-items:center;justify-content:center;box-shadow:0 0 40px rgba(94,106,210,.55),0 0 0 1px rgba(94,106,210,.4)">
                     <svg width="26" height="26" viewBox="0 0 28 28" fill="none">
@@ -569,16 +610,16 @@
                 </div>
               </div>
               <!-- Name card overlay -->
-              <div
+              <div class="hero-name-card"
                 style="position:absolute;bottom:20px;left:20px;right:20px;background:rgba(5,5,6,.8);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:16px 20px;display:flex;align-items:center;justify-content:space-between">
                 <div>
-                  <div style="font-size:16px;font-weight:600;color:#EDEDEF;letter-spacing:-.01em">Coach Trần Tiến Công
+                  <div class="hero-name-title" style="font-size:16px;font-weight:600;color:#EDEDEF;letter-spacing:-.01em">Coach Trần Tiến Công
                   </div>
-                  <div
+                  <div class="hero-name-role"
                     style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#5E6AD2;font-weight:600;margin-top:3px">
                     Huấn luyện viên chính</div>
                 </div>
-                <div
+                <div class="hero-name-arrow"
                   style="width:36px;height:36px;background:rgba(94,106,210,.2);border:1px solid rgba(94,106,210,.35);border-radius:999px;display:flex;align-items:center;justify-content:center">
                   <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
                     <path d="M2 10L7 2L12 10" stroke="#5E6AD2" stroke-width="1.5" stroke-linecap="round"
